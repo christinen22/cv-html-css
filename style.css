@@ -1,3 +1,40 @@
+.site-header {
+    background-color: white;
+    overflow: auto;
+}
+.site-header img {
+    float: right;
+}
 h1 {
-    color: royalblue
+    display: block;
+    padding-top: 1em;
+    padding-left: 50px;
+    font-size: 50px;
+    overflow: auto;
+    font-family: Verdana;
+}
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(164, 241, 133)
+}
+.main-nav li {
+    float: left;
+    
+}
+.main-nav li a {
+    display: block;
+    color: black;
+    font-family: Verdana;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.main-nav li a:hover {
+    background-color: white;
+}
+p {
+    font-family: Verdana;
 }
