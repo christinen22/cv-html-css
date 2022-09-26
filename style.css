@@ -7,42 +7,42 @@
 
 .site-header {
     background-color: white;
-    border: 3px solid blue;
-    display: flex;
     justify-content: space-around;
     padding: 30px;
     
 }
 .site-header img {
-    border: 3px solid blue;
-    cursor: pointer; 
+    cursor: pointer;
+    display: flex;
 }
-.title {
+/*.title {
     border: 3px solid blue;
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
     align-self: center;
     
-}
+}*/
 .nav-links {
-    border: 3px solid blue;
     font-family: 'Quicksand', sans-serif;
+    color:black;
+    font-weight: bold;
     padding: 9px 25px;
-    background-color: bisque;
+    background-color: #FFFF00;
     border: none;
     border-radius: 50px;
     
 }
 .nav-links li {
     display: inline-block;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 .nav-links li a:hover {
     color: white;
 }
 
-button {
+/*button {
     padding: 9px 25px;
+    font-family: 'Quicksand', sans-serif;
     background-color: bisque;
     border: none;
     border-radius: 50px;
@@ -53,7 +53,7 @@ button {
 button:hover {
     background-color: white;
 }
-
+*/
 h2, h3, p, li {
     font-family: 'Quicksand', sans-serif;
 }
