@@ -223,14 +223,17 @@ i {
         color: #FF69B4;
     }
 
+strong {
+    text-transform: uppercase;
+}
     
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1023px) {
 
 
 
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 767px)  {
 
     .boxes {
         display: flex;
@@ -250,7 +253,7 @@ i {
         
         }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
 
     .top {
         display: flex;
