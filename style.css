@@ -22,40 +22,81 @@
     
 }
 
+
+header {
+    display: flex;
+    flex-direction: column;
+     
+}
+
 .top {
     display: flex;
     justify-content: flex-start;
     margin-top: 100px;
 }
 
+
+  /*hamburger*/
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+    /*hamburger*/
+
+.menu a {
+    padding: 0.5em 0.8em;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+.menu li {
+    background-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+  }
+
 .top-nav {
+    display: flex;
+    padding: 0;
+    margin: 1rem 0;
+    justify-content: center;
     background-color: #E7E91A;
     opacity: 0.6;
     position: fixed;
     width: 100%;
 }
 
-.top img {
-    height: 300px;
-    width: 300px;
-    
+.top {
+    display: flex;
 }
 
-.intro {
-    margin-top: 80px;
+.top img {
+    height: 400px;
+    width: 400px;
+    
 }
 
 h1 {
     font-family: 'Quicksand', sans-serif;
     margin-left: 150px;
-    
-
+    align-self: center;
+    font-size: 60px;
+    margin-top: 80px;
 }
-header {
-    display: flex;
-    flex-direction: column;
-    
-    
+
+h1 a {
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    text-decoration: none;
 }
 
 h2, top-nav li, h3 {
@@ -67,18 +108,6 @@ h2, top-nav li, h3 {
 }
 
 
-h1 {
-    font-size: 60px;
-    
-}
-
-h1 a {
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-    color: #333;
-    text-decoration: none;
-}
-
 p, ul {
     font-family: 'Quicksand', sans-serif;
     color: #333;
@@ -86,28 +115,6 @@ p, ul {
     font-weight: bold;
 }
 
-
-.top-nav {
-    display: flex;
-    padding: 0;
-    margin: 1rem 0;
-    justify-content: center;
-   
-    
-  }
-  
-.top-nav a {
-    padding: 0.5em 0.8em;
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-  }
-  
-.top-nav li {
-    background-color: transparent;
-    display: inline-block;
-    font-weight: bold;
-  }
 
 /* main page */
 
@@ -242,7 +249,7 @@ strong {
 
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 699px)  {
 
     .boxes {
         display: flex;
@@ -262,48 +269,72 @@ strong {
         
         }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 478px) {
 
     .top {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-top: 130px;
+        margin-top: 30px;
         flex-wrap: wrap;
     }
 
-    .top-nav {
-        align-self: center;
+
+  /* hamburger */
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #E7E91A;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 50px;
+
     }
 
-    .top-nav li {
-       flex-basis: 50px;
-       padding: 0;
-       align-self: flex-end;
+    .menu li:hover {
+       display: inline-block;
+       transition: 0.3s ease;
+       background-color: #FF69B4;
     }
+
+    .menu li {
+        margin-top: 15px;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+
 
     .top img {
-        margin-top: 20px;
+        margin-top: 50px;
         height: 300px;
         width: 300px;
-    }
-
-    .intro {
-        margin-top: 10px;
+        align-self: center;
     }
 
     h1 {
         font-size: 50px;
         margin-left: auto;
+        margin-top: 10px;
+        text-align: center;
     }
 
     .info-box, .footer-container, .boxes {
         flex-wrap: wrap;
     }
 
-    .intro {
-        text-align: center;
+
+    .info-box {
+        margin-top: 50px;
     }
-    
     
     .info-box img {
     width: 250px;
@@ -321,10 +352,14 @@ strong {
     .boxes {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         background-color: #ffc;
         opacity: 0.6;
+    }
+
+    .history, .skills, .goals {
+        align-content: flex-start;
     }
     
     .footer-container {
